@@ -1,9 +1,1 @@
-// Data for our program to parse
-
-// ✅ TODO Add an array of strings where each element is a different task
-
-/* Example:
-1. ["pick up groceries", "bake cake", "clean kitchen", "get ready for
-party"]
-2. This is not a JS module, so do not use any keywords or store the
-array in a variable. */
+["Buy a new book","Clean the dishes","Do your homework","Fold the laundry","Walk the dog"]

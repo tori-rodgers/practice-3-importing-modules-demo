@@ -1,17 +1,23 @@
 // Custom module for managing tasks
 
-// ✅ TODO Create the package.json so we can use ES modules (modern syntax)
-// Open the terminal at the task-manager folder and run npm init -y
+// NOTE We're using CommonJS syntax in this practice. If we were using ES modules, we would need to create the package.json (npm init -y) and change "type" to "module".
 
 
-// ✅ TODO Define and export the following functions
+// TODO Define and export the following functions
 
-// addTask(tasks, task)
-// Adds a new task to the task list
+function addTask(tasks, task) {
+    // Adds a new task to the task list
+    tasks.push(task);
+    console.log(`Task "${task}" added!`);
+}
 
+function listTasks(tasks) {
+    // Logs all tasks to the console
+    console.log("Current Tasks: ");
 
-
-
-
-// listTasks(tasks)
-// Logs all tasks to the console
+    tasks.forEach(
+        (task, index) => 
+        console.log(`${index + 1}. ${task}`)
+    ); 
+}
+module.exports = { addTask, listTasks }
